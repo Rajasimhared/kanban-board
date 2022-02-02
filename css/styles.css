@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --main-color: #5514b4;
+  --main-border-radius: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--main-color);
+}
+
+header,
+footer {
+  background-color: var(--main-color);
+  height: 60px;
+  justify-content: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 36px;
+  padding-top: 10px;
+}
+
+footer span {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-one {
+  flex: 1;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.list {
+  width: 250px;
+  border: 1px solid var(--main-color);
+  margin: 20px;
+  border-radius: var(--main-border-radius);
+  color: var(--main-color);
+}
+
+.list .title {
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.list .item {
+  padding: 5px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+/* .list input,
+button {
+  color: var(--main-color);
+  margin-left: 5px;
+} */
+
+.list button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--main-border-radius);
+  background: var(--main-color);
+  color: #fff;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.heading .title {
+  width: 200px;
+}
+
+.heading .add {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
